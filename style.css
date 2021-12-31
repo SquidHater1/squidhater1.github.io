@@ -9,3 +9,8 @@
 #photoDiv{
     text-align: center;
 }
+
+#myPhoto{
+    max-width: 50%;
+    height: auto;
+}
