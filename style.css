@@ -2,6 +2,14 @@
     background-color: rgb(145, 145, 145);
 }
 
+.mainTitle{
+    font-weight: bolder;
+}
+
+.smallHeader{
+    font-weight: bold;
+}
+
 #titleDiv{
     text-align: center;
 }
@@ -16,4 +24,12 @@
 
 #myPhoto{
     width: 25%;
+}
+
+#aboutMe{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
