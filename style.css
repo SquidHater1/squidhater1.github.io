@@ -1,5 +1,6 @@
-.body{
+body{
     background-color: rgb(145, 145, 145);
+    text-align: center;
 }
 
 .mainTitle{
@@ -8,10 +9,6 @@
 
 .smallHeader{
     font-weight: bold;
-}
-
-#titleDiv{
-    text-align: center;
 }
 
 #photoDiv{
@@ -32,4 +29,8 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.projectDiv{
+    text-align: center;
 }
