@@ -11,6 +11,10 @@ body{
     font-weight: bold;
 }
 
+.inline{
+    display: inline;
+}
+
 #photoDiv{
     text-align: center;
     display: block;
