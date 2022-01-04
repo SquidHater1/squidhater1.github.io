@@ -3,6 +3,7 @@ body{
     text-align: center;
 }
 
+
 .mainTitle{
     font-weight: bolder;
 }
@@ -37,4 +38,7 @@ body{
 
 .projectDiv{
     text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 12%;
 }
