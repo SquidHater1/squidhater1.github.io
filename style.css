@@ -15,13 +15,11 @@ body{
     margin-top: 1px;
 }
 
-.smallHeader{
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.inline{
-    display: inline;
+.personalInfo{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10%;
 }
 
 #photoDiv{
@@ -32,6 +30,15 @@ body{
 
 #myPhoto{
     width: 100%;
+}
+
+.smallHeader{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.inline{
+    display: inline;
 }
 
 #aboutMe{
@@ -53,11 +60,4 @@ body{
 .projectTitle{
     font-weight: bold;
     font-size: 18px;
-}
-
-.personalInfo{
-    display:flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 10%;
 }
