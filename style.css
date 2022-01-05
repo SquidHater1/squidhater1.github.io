@@ -1,6 +1,7 @@
 body{
     background-color: rgb(145, 145, 145);
     text-align: center;
+    font-family: sans-serif;
 }
 
 
@@ -25,23 +26,21 @@ body{
 
 #photoDiv{
     text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    order: 1;
+    max-width: 15%;
 }
 
 #myPhoto{
-    width: 25%;
+    width: 100%;
 }
 
 #aboutMe{
     text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 12%;
-    width: 50%;
+    margin-bottom: 0%;
+    margin-right: 2%;
+    margin-top: 2%;
+    width: 48%;
+    order:0;
 }
 
 .projectDiv{
@@ -54,4 +53,11 @@ body{
 .projectTitle{
     font-weight: bold;
     font-size: 18px;
+}
+
+.personalInfo{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10%;
 }
