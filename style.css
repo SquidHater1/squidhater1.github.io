@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(145, 145, 145);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+.mainTitle{
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+.link{
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+.personalInfo{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10%;
+}
+
+#photoDiv{
+    text-align: center;
+    order: 1;
+    max-width: 15%;
+}
+
+#myPhoto{
+    width: 100%;
+}
+
+.smallHeader{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.inline{
+    display: inline;
+}
+
+#aboutMe{
+    text-align: center;
+    margin-bottom: 0%;
+    margin-right: 2%;
+    margin-top: 2%;
+    width: 48%;
+    order:0;
+}
+
+.projectDiv{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 12%;
+}
+
+.projectTitle{
+    font-weight: bold;
+    font-size: 18px;
+}
