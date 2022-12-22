@@ -186,7 +186,7 @@ p{
     filter: invert(96%) sepia(2%) saturate(5751%) hue-rotate(201deg) brightness(91%) contrast(107%);
 }
 
-#homePhoto{
+homePhoto{
     background-color: var(--white10);
     width: 400px;
     height: 400px;
@@ -272,6 +272,13 @@ p{
     border-radius: 20px;
 }
 
+#relevantSkillsTitleDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
 #relevantSkillsContent{
     text-align: center;
     margin-top: 16px;
@@ -299,5 +306,5 @@ ul#relevantSkillsList{
 }
 
 #osuLogo{
-    width: 192px;
+    width: 64px;
 }
