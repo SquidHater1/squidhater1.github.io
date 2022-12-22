@@ -186,9 +186,10 @@ p{
     filter: invert(96%) sepia(2%) saturate(5751%) hue-rotate(201deg) brightness(91%) contrast(107%);
 }
 
-.homePhoto{
+#homePhoto{
     background-color: var(--white10);
     width: 400px;
+    height: 400px;
     padding: 40px;
     border-radius: 20px;
 }
