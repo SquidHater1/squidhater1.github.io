@@ -2,117 +2,119 @@
 <head>
     <meta charset="utf-8" />
     <title>Ryan Smith</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-    <!--titleDiv contains my name, email, and github profile link-->
-    <div id="titleDiv">
-        <h1 class="mainTitle" id="myName">Ryan Smith</h1>
-        <a href="mailto: smithry9@oregonstate.edu" class="link" id="emailLink">
-            <h2 class="email">smithry9@oregonstate.edu</h2>
-        </a>
-        <a href="https://github.com/SquidHater1" class="link" id="githubLink">
-            <h2 class="github">Github Profile</h2>
-        </a>
-    </div>
-
-    <div class="personalInfo">
-        <!--photoDiv just has the image of me in it-->
-        <div id="photoDiv">
-            <img src="./myPhoto.jpg" alt="Ryan Smith" id="myPhoto">
-        </div>
-
-        <!--This contains the about me section-->
-        <div id="aboutMe">
-            <h3 class="smallHeader">About Me</h3>
-
-            <p class="genericText">
-                    My name is Ryan Smith, and I am a 4th year computer science major at Oregon State University with a current overall gpa of 3.64. I'm focusing on web an mobile application development with a sub focus in computer graphics. I have experience with C, C++, HTML, CSS, Javascript, Kotlin, GLSL, and Python from taking classes in pursuit of a computer science major. Below are just a few of the larger projects I've worked on for my different classes during my schooling. 
-            </p>
-            
-            <p class="genericText">
-                In my free time, I enjoy 3d printing and playing games with my friends. I've also recently picked up 3d modeling and painting those models after I print them. When I want to be active, I really like to go bowling or rock climbing. I'm a very social person and love to spend time with my friends, either online or in person, whenever I can.
-            </p>
-            
-            <p class="genericText">
-                Below are a few of the projects I'm the most proud of, from several different classes or just for fun.
-            </p>
-        </div>
-    </div>
-
-    <!--Small title that indicated the list of projects I've done-->
-    <h3 class="smallHeader">Projects</h3>
-
-
-    <!--Contains my Golden Octopus Project, a link to the github for it, and a description of what it is-->
-    <div class="projectDiv">
-        <h4 class="projectTitle">The Golden Octopus</h4>
-        <a href="https://github.com/SquidHater1/goldenOctopus" class="link" id="goldenOctopusLink">
-            Github Link<br><br>
-        </a>
-        <img src="./goldenOctopus.png" alt="Golden Octopus" id="goldenOctopusPhoto">
-        <p class="genericText inline">
-                <br><br>"The Golden Octopus" is a game that I made as the final project in my computer graphics course.<br><br>
-                The specifications for this assignment were to create something cool using OpenGL. I decided to program a game where there is one golden octopus among several silver ones. The golden one turns silver and they all jump around and over each other. The goal is to keep track of which one was silver, and they get revealed at the end. Here is a video of the program running: 
-        </p>
-        <a href="https://media.oregonstate.edu/media/t/1_5oh58zi7" class="inline">
-            Video Link
-        </a>
-    </div>
-
-    <!--Contains my Eclone Project, a link to the download page for it, and a description of what it is-->
-    <div class="projectDiv">
-        <h4 class="eclone">Eclone</h4>
-        <a href="https://squidhater1.itch.io/eclone" class="link" id="projectlink">
-            Game Download Link<br><br>
-        </a>
-        <img src="./Eclone.png" alt="Eclone" id="eclonePhoto">
-        <p class="genericText">
-                This is a small game I made for the Beaver Game Jam. We had 3 days to make a game with the theme "Echo". This game works by having the player control two little squares at the same time with only one set of controls, so they have to navigate the level keeping track of where both of the squares are.
-        </p>
-    </div>
     
-    <!--Contains my TaHaw Project, a link to the github for it, and a description of what it is-->
-    <div class="projectDiv">
-        <h4 class="projectTitle">TaHaw</h4>
-        <a href="https://github.com/SquidHater1/tahaw" class="link" id="taHawLink">
-            Github Link<br><br>
+    <div class="header">
+        <a href="./index.html">
+            <img src="./squid-black.svg" alt="SquidHater1" id="myLogo">
         </a>
-        <img src="./Tahaw.png" alt="TaHaw" id="taHawPhoto">
-        <p class="genericText inline">
-                <br><br>The website "TaHaw" was the main project in my Web Development class.<br><br>I worked in a group and together we made a site with two games, named "Ta" and "Haw". The games are very simple and were more just to test our web development abilities. In Taw, the goal of the game is to click a button in the middle of the screen as many times as possible in the given time limit. In Haw, the goal is to hold the button down as long as possible. The games can be accessed by clicking on the play button for whichever game you want to play. The leaderboards are displayed on the main page, although they do get periodically wiped. Here is a link to the website: 
-        </p>
-        <a href="http://tahaw.herokuapp.com/" class="inline">
-            TaHaw
+
+        <div class="navigation">
+            <a href="./index.html" class="navLink" id="homeLink">
+                <p class="navText">Home</p>
+            </a>
+            <a href="./about.html" class="navLink" id="aboutLink">
+                <p class="navText">About Me</p>
+            </a>
+            <a href="./contact.html" class="navLink" id="ContactLink">
+                <p class="navText">Contact</p>
+            </a>
+        </div>
+
+        <a href="https://github.com/SquidHater1">
+            <img src="./github-mark.png" alt="Github" id="githubLogo">
         </a>
     </div>
 
-    <!--Contains my smallShell Project, a link to the github for it, and a description of what it is-->
-    <div class="projectDiv">
-        <h4 class="projectTitle">Small Shell</h4>
-        <a href="https://github.com/SquidHater1/smallShell" class="link" id="smallShellLink">
-            Github Link<br><br>
-        </a>
-        <img src="./smallshell.png" alt="Small Shell" id="smallShellPhoto">
-        <p class="genericText">
-                This program was the main project in my Operating Systems 1 class.<br><br>
-                The goal of this assignment was to create a simplified but functional version of a shell in linux using the C programming language. In the example picutre I took here, I ran several commands on this shell including "echo", "cat", "ls", "vim", "g++" to compile the simple c++ program I wrote to test vim, and running the program with "./hello". The program also supports input/output redirection as seen in the line "echo "Hello World!" > test.txt".
-        </p>
+    
+
+    <div class="hero">
+        <div class="homeIntro">
+            <h3 class="gradientText">Howdy! I'm Ryan Smith</h3>
+            <h1>Full Stack Web Developer</h1>
+            <p>Short thing about why I'm good. This should be a couple sentances but not really any longer.</p>
+            <button type="button" id="seeWorkButton">
+                <p class="buttonText">See My Work</p>
+                <img src="./downArrow.svg" class="buttonDownArrow">
+            </button>
+        </div>
+
+        <div class="homePhoto">
+            <img src="./homePic.jpg" id="homePhoto">
+        </div>
     </div>
 
-<!--
-    <div class="projectDiv">
-        <h4 class="smallShell">Small Shell</h4>
-        <a href="https://github.com/projectlink" class="link" id="projectlink">
-            Github Link<br>
-        </a>
-        <img src="./smallshell.png" alt="Small Shell" id="smallShellPhoto">
-        <p class="genericText">
-                This program was the main project in my Operating Systems 1 class. 
-        </p>
+    <div class="backgroundDiv">
+        <img src="./squid-black.svg" id="backgroundImg">
     </div>
--->
+
+    <div class="projectsArea">
+        <h2 id="projectsTitle">Projects</h2>
+        <div class="projectsList">
+            
+            <div class="project">
+                <div class="projectColor" id="tahawColor"></div>
+                <img src="./Tahaw.png" id="tahawImg">
+                <div id="tahawText">
+                    <a href="https://tahaw.herokuapp.com">
+                        <h4>TaHaw</h4>
+                    </a>
+                    <p>Tahaw is the final project website from my Web Development class.</p>
+                </div>
+                
+            </div>
+
+            <div class="project">
+                <div class="projectColor" id="tahawColor"></div>
+                <img src="./Tahaw.png" id="tahawImg">
+                <div id="tahawText">
+                    <a href="https://tahaw.herokuapp.com">
+                        <h4>TaHaw</h4>
+                    </a>
+                    <p>Tahaw is the final project website from my Web Development class.</p>
+                </div>
+                
+            </div>
+            <div class="project">
+                <div class="projectColor" id="tahawColor"></div>
+                <img src="./Tahaw.png" id="tahawImg">
+                <div id="tahawText">
+                    <a href="https://tahaw.herokuapp.com">
+                        <h4>TaHaw</h4>
+                    </a>
+                    <p>Tahaw is the final project website from my Web Development class.</p>
+                </div>
+                
+            </div>
+            <div class="project">
+                <div class="projectColor" id="tahawColor"></div>
+                <img src="./Tahaw.png" id="tahawImg">
+                <div id="tahawText">
+                    <a href="https://tahaw.herokuapp.com">
+                        <h4>TaHaw</h4>
+                    </a>
+                    <p>Tahaw is the final project website from my Web Development class.</p>
+                </div>
+                
+            </div>
+            <div class="project">
+                <div class="projectColor" id="tahawColor"></div>
+                <img src="./Tahaw.png" id="tahawImg">
+                <div id="tahawText">
+                    <a href="https://tahaw.herokuapp.com">
+                        <h4>TaHaw</h4>
+                    </a>
+                    <p>Tahaw is the final project website from my Web Development class.</p>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
 </body>
 
 </html>

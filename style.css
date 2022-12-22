@@ -1,63 +1,302 @@
+:root{
+    --primary: #8221AB;
+    --secondary: #321AB8;
+    --mainBackground: #121212;
+    --white: #E8D9EE;
+    --white75: #B2A7B7;
+    --white50: #7D7680;
+    --white25: #484449;
+    --white10: #272628;
+    --white5: #1D1C1D;
+    --error: #D81639;
+}
+
+html, body{
+    margin:0px;
+    padding:0px;
+}
+
 body{
-    background-color: rgb(145, 145, 145);
-    text-align: center;
-    font-family: sans-serif;
+    background-color: var(--mainBackground);
 }
 
-
-.mainTitle{
-    font-weight: bolder;
-    font-size: 45px;
+a{
+    color: var(--white);
+    text-decoration: none;
 }
 
-.link{
-    font-size: 12px;
-    margin-top: 1px;
+a :hover{
+    text-decoration: underline;
 }
 
-.personalInfo{
-    display:flex;
+h1, h2, h3, h4, h5, h6{
+    font-family: "Fira Sans", sans-serif;
+    color: var(--white);
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-size: 89px;
+    line-height: 106.8px;
+}
+
+h2{
+    font-size:67px;
+    line-height: 80.4px;
+}
+
+h3{
+    font-size:50px;
+    font-weight: normal;
+    line-height: 60px;
+}
+
+h4{
+    font-size:37px;
+    line-height: 44.4px;
+}
+
+h5{
+    font-size:28px;
+    line-height: 33.6px;
+}
+
+h6{
+    font-size:21px;
+    line-height: 25.2px;
+}
+
+p{
+    color: var(--white75);
+    font-size: 21px;
+    font-family: "Rubik", sans-serif;
+    line-height: 24.9px;
+}
+
+.backgroundDiv{
+    display: flex;
     justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 10%;
-}
-
-#photoDiv{
-    text-align: center;
-    order: 1;
-    max-width: 15%;
-}
-
-#myPhoto{
+    align-items: center;
+    position: fixed;
+    top: 0px;
     width: 100%;
+    z-index: -1;
 }
 
-.smallHeader{
-    font-weight: bold;
-    font-size: 25px;
+#backgroundImg{
+    width: 1080px;
+    height: 1080px;
+    filter: invert(11%) sepia(0%) saturate(2648%) hue-rotate(357deg) brightness(89%) contrast(96%);
 }
 
-.inline{
-    display: inline;
+.header{
+    padding-top: 24px;
+    padding-bottom:24px;
+    padding-left: 64px;
+    padding-right: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border-bottom: 1px solid var(--white25);
+    background-color: var(--mainBackground);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
 
-#aboutMe{
+.navigation{
+    display: flex;
+}
+
+#myLogo{
+    width: 32px;
+    height: 32px;
+    filter: invert(96%) sepia(2%) saturate(5751%) hue-rotate(201deg) brightness(91%) contrast(107%);
+}
+
+.navLink{
+    text-decoration: none;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.navText{
+    color: var(--white);
+}
+
+#githubLogo{
+    width: 32px;
+    height: 32px;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    padding-left:128px;
+    padding-right: 128px;;
+    padding-top: 96px;
+    align-items: center;
+    padding-bottom: 800px;
+    gap: 64px;
+}
+
+.homeIntro{
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    height: 540px;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
-    margin-bottom: 0%;
-    margin-right: 2%;
-    margin-top: 2%;
-    width: 48%;
-    order:0;
 }
 
-.projectDiv{
-    text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 12%;
+.gradientText{
+    background-image: linear-gradient(170deg, rgba(130,33,171,1) 25%, rgba(50,26,184,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    width:fit-content;
 }
 
-.projectTitle{
+#seeWorkButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 100px;
+    background: rgb(130,33,171);
+    background: linear-gradient(170deg, rgba(130,33,171,1) 25%, rgba(50,26,184,1) 100%);
+}
+
+.buttonText{
+    color: var(--white);
     font-weight: bold;
-    font-size: 18px;
+}
+
+.buttonDownArrow{
+    width: 32px;
+    height: 32px;
+    padding-left: 24px;
+    filter: invert(96%) sepia(2%) saturate(5751%) hue-rotate(201deg) brightness(91%) contrast(107%);
+}
+
+.homePhoto{
+    background-color: var(--white10);
+    width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.projectsArea{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+
+.projectsList{
+    padding-top: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.project{
+    width: 400px;
+    height: 600px;
+    background-color: var(--white10);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.projectColor{
+    margin-top: 24px;
+    width: 384px;
+    height: 157px;
+    background-color: white;
+}
+
+
+#tahawColor{
+    background-color: #B599D2;
+}
+
+#tahawImg{
+    width: 360px;
+    position: absolute;
+    margin-top: 48px;
+}
+
+#tahawText{
+    margin-top: 64px;
+    text-align: center;
+}
+
+
+
+
+#aboutHero{
+    flex-direction: column;
+    padding-bottom: 0px;
+}
+
+#aboutHeroContent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left:0px;
+    padding-right: 0px;
+    align-items: center;
+}
+
+#relevantSkills{
+    width: 480px;
+    height: 480px;
+    background-color: var(--white10);
+    border-radius: 20px;
+}
+
+#relevantSkillsContent{
+    text-align: center;
+    margin-top: 16px;
+}
+
+ul#relevantSkillsList{
+    text-align: left;
+    font-family: "Fira Sans", sans-serif;
+    color: var(--white);
+    font-weight: bold;
+    font-size:21px;
+    line-height: 30.2px;
+    margin-top: 48px;
+    margin-left: 32px;
+}
+
+#aboutMeText{
+    width: 480px;
+    height: 480px;
+    
+}
+#aboutMeP{
+    margin: 0px;
+    padding: 0px;
+}
+
+#osuLogo{
+    width: 192px;
 }
