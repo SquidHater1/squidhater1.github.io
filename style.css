@@ -254,6 +254,8 @@ homePhoto{
 #aboutHero{
     flex-direction: column;
     padding-bottom: 0px;
+    padding-left: 256px;
+    padding-right: 256px;
 }
 
 #aboutHeroContent{
