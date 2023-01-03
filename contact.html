@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan Smith</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./squidIcon.ico">
     <script src="./index.js" charset="utf-8" defer></script>
 </head>
 <body>
@@ -16,13 +18,13 @@
 
         <div class="navigation">
             <a href="./index.html" class="navLink" id="homeLink">
-                <p class="navText">Home</p>
+                <p class="navText" id="homeLinkText">Home</p>
             </a>
             <a href="./about.html" class="navLink" id="aboutLink">
-                <p class="navText">About Me</p>
+                <p class="navText" id="aboutLinkText">About Me</p>
             </a>
-            <a href="./contact.html" class="navLink" id="ContactLink">
-                <p class="navText">Contact</p>
+            <a href="./contact.html" class="navLink" id="contactLink">
+                <p class="navText" id="contactLinkText">Contact</p>
             </a>
         </div>
 
@@ -31,20 +33,35 @@
         </a>
     </div>
 
-    <div id="contactFormDiv">
-        <h2 class="gradientText">Contact Me</h2>
-        <form id="contactForm">
-            <label for="fname" class="formText">First Name</label>
-            <input type="text" id="fname" name="fname" placeholder="Ryan" required>
-            <label for="lname" class="formText">Last Name</label>
-            <input type="text" id="lname" name="lname" placeholder="Smith" required>
-            <label for="email" class="formText">Email</label>
-            <input type="email" id="email" name="email" placeholder="ryansmith@example.com" required>
-            <label for="phoneNumber" class="formText">Phone Number</label>
-            <input type="tel:123-456-7890" id="phoneNumber" name="phoneNumber" placeholder="123-456-7890">
-            <input type="submit" value="Submit" id="submitFormButton">
-        </form>
+    <div id="contactBodyContent">
+        <div id="contactFormDiv">
+            <h2 class="gradientText">Contact Me</h2>
+            <form method="POST" action="mailto:smithr01@yahoo.com?subject=Website Form Submission" enctype="text/plain" method="get" id="contactForm">
+                <div id="nameFieldsDiv">
+                    <div id="fNameDiv">
+                        <label for="fname" class="formText">First Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Ryan" required>
+                    </div>
+                    <div id="lNameDiv">
+                        <label for="lname" class="formText">Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Smith" required>
+                    </div>
+                    
+                </div>
+                <!--
+                <label for="email" class="formText">Email</label>
+                <input type="email" id="email" name="email" placeholder="ryansmith@example.com" required>
+                -->
+                
+                <label for="phoneNumber" class="formText">Phone Number</label>
+                <input type="tel:123-456-7890" id="phoneNumber" name="phoneNumber" placeholder="123-456-7890">
+                <textarea name="message" placeholder="Email content..." rows="8" id="emailContent"></textarea>
+                <input type="submit" value="Send" id="submitFormButton">
+            </form>
+        </div>
     </div>
+
+    
 
     <div class="backgroundDiv">
         <img src="./squid-black.svg" id="backgroundImg">

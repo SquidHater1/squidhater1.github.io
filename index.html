@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan Smith</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans">
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./squid-black.svg">
+    <link rel="icon" href="./squidIcon.ico">
     <script src="./index.js" charset="utf-8" defer></script>
 </head>
 <body>
@@ -17,13 +18,13 @@
 
         <div class="navigation">
             <a href="./index.html" class="navLink" id="homeLink">
-                <p class="navText">Home</p>
+                <p class="navText" id="homeLinkText">Home</p>
             </a>
             <a href="./about.html" class="navLink" id="aboutLink">
-                <p class="navText">About Me</p>
+                <p class="navText" id="aboutLinkText">About Me</p>
             </a>
-            <a href="./contact.html" class="navLink" id="ContactLink">
-                <p class="navText">Contact</p>
+            <a href="./contact.html" class="navLink" id="contactLink">
+                <p class="navText" id="contactLinkText">Contact</p>
             </a>
         </div>
 
@@ -60,15 +61,38 @@
                 <div class="projectColor" id="tahawColor"></div>
                 <img src="./Tahaw.png" class="projectImg">
                 <div class="projectText">
-                    <a href="https://tahaw.herokuapp.com">
-                        <h4>TaHaw</h4>
+                    <a href="https://tahaw.onrender.com">
+                        <h4 class="projectTitle">TaHaw</h4>
                     </a>
-                    <p>Tahaw is the final project website from my Web Development class.</p>
+                    <a href="https://github.com/SquidHater1/tahaw">
+                        <h6 class="projectGithubLink">Github Link</h6>
+                    </a>
+                    <p>Tahaw is the final project website from my Web Development class. It features two "boredom aleviation games" that track and display highscores. There were two of us who worked on this project, and I handled all of the backend programming. The site was created with NodeJS and hosted with render.com</p>
                 </div>
-                
             </div>
 
+            <div class="project">
+                <div class="projectColor" id="ecloneColor"></div>
+                <img src="./Eclone.png" class="projectImg">
+                <div class="projectText">
+                    <a href="https://squidhater1.itch.io/eclone">
+                        <h4 class="projectTitle">Eclone</h4>
+                    </a>
+                    
+                    <p>Eclone is a short platformer game I created as my submission to the Beaver Game Jam 2021. The theme was "Echo" and he had just a weekend to work on our projects. I decided on a game with two characters that are controlled at the same time with one set of keys, making for interesting platforming challenges.</p>
+                </div>
+            </div>
             
+            <div class="project">
+                <div class="projectColor" id="goldenColor"></div>
+                <img src="./goldenOctopus.png" class="projectImg">
+                <div class="projectText">
+                    <a href="https://media.oregonstate.edu/media/t/1_5oh58zi7">
+                        <h4 class="projectTitle">The Golden Octopus</h4>
+                    </a>
+                    <p>"The Golden Octopus" is a game I made for my Intro to Computer Graphics final project. The assignment was simply to create something cool using OpenGL. I decided to make a "follow the cup" style game where you have to keep track of where the golden octopus ends up as they move around and swap places.</p>
+                </div>
+            </div>
             
         </div>
     </div>
