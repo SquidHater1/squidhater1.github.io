@@ -168,6 +168,7 @@ p, .formText{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 0px;
     padding-left: 64px;
     padding-right: 64px;
     padding-top: 16px;
@@ -182,11 +183,15 @@ p, .formText{
     font-weight: bold;
 }
 
-.buttonDownArrow{
+.buttonDownArrow, .launchIcon{
     width: 32px;
     height: 32px;
     padding-left: 24px;
     filter: invert(96%) sepia(2%) saturate(5751%) hue-rotate(201deg) brightness(91%) contrast(107%);
+}
+
+.launchIcon{
+    padding-left: 0px;
 }
 
 #homePhoto{
@@ -224,7 +229,7 @@ p, .formText{
 
 .project{
     width: 400px;
-    height: 600px;
+    height: 680px;
     background-color: var(--white10);
     border-radius: 10px;
     display: flex;
@@ -241,6 +246,9 @@ p, .formText{
     border-radius: 5px;
 }
 
+#portfolioColor{
+    background-color: #6f1c92;
+}
 
 #tahawColor{
     background-color: #B599D2;
@@ -254,6 +262,26 @@ p, .formText{
     background-color: #AB9416;
 }
 
+#bennyColor{
+    background-color: #DDDDDD;
+}
+
+#tarpaulinColor{
+    background-color: #090b0f;
+}
+
+#uploadColor{
+    background-color: #090b0f;
+}
+
+#authColor{
+    background-color: #090b0f;
+}
+
+#smallColor{
+    background-color: #101010;
+}
+
 .projectImg{
     max-width: 360px;
     max-height: 180px;
@@ -265,6 +293,12 @@ p, .formText{
 .projectText{
     margin-top: 64px;
     text-align: center;
+}
+
+.projectTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -329,6 +363,24 @@ ul#relevantSkillsList{
 #osuLogo{
     width: 64px;
 }
+
+#extraAboutMe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 64px;
+    margin-right: 64px;
+    gap: 64px;
+    align-items: center;
+}
+
+.aboutPhotos{
+    max-width: 580px;
+    max-height: 580px;
+    border-radius: 10px;
+}
+
+
 
 #contactBodyContent{
     display: flex;

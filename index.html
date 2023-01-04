@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans">
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./squidIcon.ico">
+    <link rel="icon" href="./images/squidIcon.ico">
     <script src="./index.js" charset="utf-8" defer></script>
 </head>
 <body>
     
     <div class="header">
         <a href="./index.html">
-            <img src="./squid-black.svg" alt="SquidHater1" id="myLogo">
+            <img src="./images/squid-black.svg" alt="SquidHater1" id="myLogo">
         </a>
 
         <div class="navigation">
@@ -29,7 +29,7 @@
         </div>
 
         <a href="https://github.com/SquidHater1">
-            <img src="./github-mark.png" alt="Github" id="githubLogo">
+            <img src="./images/github-mark.png" alt="Github" id="githubLogo">
         </a>
     </div>
 
@@ -42,15 +42,15 @@
             <p>Soon-to-be college graduate excited to start a career in web development.</p>
             <button type="button" id="seeWorkButton">
                 <p class="buttonText">See My Work</p>
-                <img src="./downArrow.svg" class="buttonDownArrow">
+                <img src="./images/downArrow.svg" class="buttonDownArrow">
             </button>
         </div>
 
-        <img src="./homePic.jpg" id="homePhoto">
+        <img src="./images/homePic.png" id="homePhoto">
     </div>
 
     <div class="backgroundDiv">
-        <img src="./squid-black.svg" id="backgroundImg">
+        <img src="./images/squid-black.svg" id="backgroundImg">
     </div>
 
     <div class="projectsArea">
@@ -58,11 +58,26 @@
         <div class="projectsList">
             
             <div class="project">
+                <div class="projectColor" id="portfolioColor"></div>
+                <img src="./images/portfolio.png" class="projectImg">
+                <div class="projectText">
+                    <a href="https://squidhater1.github.io">
+                        <h4 class="projectTitle">Portfolio Website<img class="launchIcon" src="./images/launch.svg"/></h4>
+                    </a>
+                    <a href="https://github.com/SquidHater1/squidhater1.github.io">
+                        <h6 class="projectGithubLink">Github Link</h6>
+                    </a>
+                    <p>I made this portfolio site to showcase my work in one easy to view place. It's a static site so I can host using Github Pages, so it just uses HTML, CSS, and Javascript.</p>
+                </div>
+            </div>
+
+            <div class="project">
                 <div class="projectColor" id="tahawColor"></div>
-                <img src="./Tahaw.png" class="projectImg">
+                <img src="./images/Tahaw.png" class="projectImg">
                 <div class="projectText">
                     <a href="https://tahaw.onrender.com">
-                        <h4 class="projectTitle">TaHaw</h4>
+                        <h4 class="projectTitle">TaHaw<img class="launchIcon" src="./images/launch.svg"/></h4>
+                        
                     </a>
                     <a href="https://github.com/SquidHater1/tahaw">
                         <h6 class="projectGithubLink">Github Link</h6>
@@ -72,11 +87,64 @@
             </div>
 
             <div class="project">
+                <div class="projectColor" id="bennyColor"></div>
+                <img src="./images/bennyslist.png" class="projectImg">
+                <div class="projectText">
+                    <a href="https://bennyslist.onrender.com">
+                        <h4 class="projectTitle">Benny's List<img class="launchIcon" src="./images/launch.svg"/></h4>
+                    </a>
+                    <a href="https://github.com/SquidHater1/bennyslist">
+                        <h6 class="projectGithubLink">Github Link</h6>
+                    </a>
+                    <p>Benny's List is an assignment from my Web Development class. The assignment was to create a website that looks similar to Craigslist, following the design we were given. Functionally, users can add items to the site, and filter existing items. There isn't a database, so new items get removed when the server restarts.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="projectColor" id="tarpaulinColor"></div>
+                <img src="./images/tarpaulin.png" class="projectImg">
+                <div class="projectText">
+                    <h4 class="projectTitle">Tarpaulin</h4>
+                    <a href="https://github.com/SquidHater1/cs493Final">
+                        <h6 class="projectGithubLink">Github Link</h6>
+                    </a>
+                    <p>Tarpaulin API was the final project for my Cloud Application Development class. It is designed to be an "alternative" to Canvas, a tool used by schools for teachers and students to view their classes and submit assignments.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="projectColor" id="uploadColor"></div>
+                <img src="./images/uploadApi.png" class="projectImg">
+                <div class="projectText">
+                    <h4 class="projectTitle">Upload Api</h4>
+                    <a href="https://github.com/SquidHater1/cs493Assignment4">
+                        <h6 class="projectGithubLink">Github Link</h6>
+                    </a>
+                    <p>This project was an assignment for my Cloud Application Developemnt class. The assignment is built upon previous assignments where we created an api similar in functionality to Yelp, so business owners could add their business, and users could leave reviews. This project had us add photo uploads to the service, where they would be stored using MongoDB and have thumbnails created using RabbitMQ.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="projectColor" id="authColor"></div>
+                <img src="./images/authApi.png" class="projectImg">
+                <div class="projectText">
+                    <h4 class="projectTitle">Authentication Api</h4>
+                    <a href="https://github.com/SquidHater1/cs493Assignment3">
+                        <h6 class="projectGithubLink">Github Link</h6>
+                    </a>
+                    <p>This project was an assignment for my Cloud Application Developemnt class. The assignment is built upon previous assignments where we created an api similar in functionality to Yelp, so business owners could add their business, and users could leave reviews. This project has us allow users to login and authenticate actions using JSON Web Tokens, as well as add rate limiting features.</p>
+                </div>
+            </div>
+
+            <div class="project">
                 <div class="projectColor" id="ecloneColor"></div>
-                <img src="./Eclone.png" class="projectImg">
+                <img src="./images/Eclone.png" class="projectImg">
                 <div class="projectText">
                     <a href="https://squidhater1.itch.io/eclone">
-                        <h4 class="projectTitle">Eclone</h4>
+                        <h4 class="projectTitle">Eclone<img class="launchIcon" src="./images/launch.svg"/></h4>
+                    </a>
+                    <a href="https://github.com/SquidHater1/BeaverGameJam">
+                        <h6 class="projectGithubLink">Github Link</h6>
                     </a>
                     
                     <p>Eclone is a short platformer game I created as my submission to the Beaver Game Jam 2021. The theme was "Echo" and he had just a weekend to work on our projects. I decided on a game with two characters that are controlled at the same time with one set of keys, making for interesting platforming challenges.</p>
@@ -85,12 +153,26 @@
             
             <div class="project">
                 <div class="projectColor" id="goldenColor"></div>
-                <img src="./goldenOctopus.png" class="projectImg">
+                <img src="./images/goldenOctopus.png" class="projectImg">
                 <div class="projectText">
                     <a href="https://media.oregonstate.edu/media/t/1_5oh58zi7">
-                        <h4 class="projectTitle">The Golden Octopus</h4>
+                        <h4 class="projectTitle">The Golden Octopus<img class="launchIcon" src="./images/launch.svg"/></h4>
                     </a>
                     <p>"The Golden Octopus" is a game I made for my Intro to Computer Graphics final project. The assignment was simply to create something cool using OpenGL. I decided to make a "follow the cup" style game where you have to keep track of where the golden octopus ends up as they move around and swap places.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="projectColor" id="smallColor"></div>
+                <img src="./images/smallshell.png" class="projectImg">
+                <div class="projectText">
+                    <a href="https://github.com/SquidHater1/smallShell">
+                        <h4 class="projectTitle">SmallShell<img class="launchIcon" src="./images/launch.svg"/></h4>
+                    </a>
+                    <a href="https://github.com/SquidHater1/smallshell">
+                        <h6 class="projectGithubLink">Github Link</h6>
+                    </a>
+                    <p>SmallShell was a project for my Operating Systems class. The assignment was to create a fully functional bash shell in C. This project was an interesting challenge to undertake and felt very rewarding when finished and working.</p>
                 </div>
             </div>
             
