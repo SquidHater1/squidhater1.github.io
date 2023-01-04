@@ -144,6 +144,11 @@ p, .formText{
     flex-wrap: wrap;
 }
 
+#aboutHero{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 .homeIntro{
     display: flex;
     flex-direction: column;
@@ -306,19 +311,19 @@ p, .formText{
 
 #aboutHero{
     flex-direction: column;
+    justify-content: center;
     padding-bottom: 0px;
-    padding-left: 256px;
-    padding-right: 256px;
+    margin-left: 13.33%;
+    margin-right: 13.33%;
 }
 
 #aboutHeroContent{
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    padding-left:0px;
-    padding-right: 0px;
-    align-items: center;
+    justify-content:space-evenly;
+    gap: 128px;  
+    align-items:center;
+    flex-wrap: wrap-reverse;
+    width:100%;
 }
 
 #relevantSkills{
