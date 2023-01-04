@@ -315,6 +315,7 @@ p, .formText{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 24px;
     padding-left:0px;
     padding-right: 0px;
     align-items: center;
