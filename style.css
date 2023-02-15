@@ -173,7 +173,7 @@ p, .formText{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0px;
+    border: 2px;
     padding-left: 64px;
     padding-right: 64px;
     padding-top: 16px;
@@ -181,6 +181,15 @@ p, .formText{
     border-radius: 100px;
     background: rgb(130,33,171);
     background: linear-gradient(170deg, rgba(130,33,171,1) 25%, rgba(50,26,184,1) 100%);
+    cursor: pointer;
+    border-style: solid;
+    border-color: var(--white5);
+}
+
+#seeWorkButton:hover, #submitFormButton:hover {
+    border: 2px;
+    border-style: solid;
+    border-color: var(--primary);
 }
 
 .buttonText{
@@ -342,7 +351,7 @@ p, .formText{
 
 #relevantSkillsContent{
     text-align: center;
-    margin-top: 16px;
+    margin-top: 8px;
 }
 
 ul#relevantSkillsList{
@@ -352,7 +361,7 @@ ul#relevantSkillsList{
     font-weight: bold;
     font-size:21px;
     line-height: 30.2px;
-    margin-top: 48px;
+    margin-top: 16px;
     margin-left: 32px;
 }
 
